@@ -1,0 +1,2 @@
+[ -f "$HOME/.config/shell/bash/main" ] && . "$HOME/.config/shell/bash/main"
+eval "$(starship init bash)"

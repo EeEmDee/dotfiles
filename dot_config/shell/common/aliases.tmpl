@@ -1,0 +1,25 @@
+alias ..='cd ..'
+alias ...='cd ../..'
+alias v='nvim'
+alias vi='nvim'
+
+{{ if eq .chezmoi.os "darwin" }}
+alias ls='ls -G'
+{{ else }}
+alias ls='ls --color=auto'
+{{ end }}
+alias ll='ls -lah'
+alias la='ls -A'
+
+alias g='git'
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gl='git log --oneline --graph'
+
+{{ if .wsl }}
+alias open='explorer.exe'
+alias pbcopy='clip.exe'
+alias pbpaste='powershell.exe -command "Get-Clipboard"'
+{{ end }}

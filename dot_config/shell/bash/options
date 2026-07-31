@@ -1,0 +1,13 @@
+shopt -s histappend
+shopt -s checkwinsize
+shopt -s globstar
+shopt -s cdspell
+shopt -s autocd
+
+HISTFILE="$XDG_STATE_HOME/bash/history"
+HISTSIZE=10000
+HISTFILESIZE=20000
+HISTCONTROL=ignoreboth
+
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'

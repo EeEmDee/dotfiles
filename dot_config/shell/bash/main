@@ -1,0 +1,7 @@
+SHELL_COMMON="$XDG_CONFIG_HOME/shell/common"
+SHELL_BASH="$XDG_CONFIG_HOME/shell/bash"
+
+. "$SHELL_BASH/options"
+. "$SHELL_BASH/completions"
+. "$SHELL_COMMON/aliases"
+. "$SHELL_COMMON/functions"

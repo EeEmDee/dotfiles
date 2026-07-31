@@ -1,0 +1,14 @@
+setopt histappend
+setopt sharehistory
+setopt histignoredups
+setopt autocd
+setopt correct
+setopt globstar
+setopt interactivecomments
+
+HISTFILE="$XDG_STATE_HOME/zsh/history"
+HISTSIZE=10000
+SAVEHIST=10000
+
+bindkey '^[[A' history-search-backward
+bindkey '^[[B' history-search-forward

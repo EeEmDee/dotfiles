@@ -1,0 +1,2 @@
+[ -f "$HOME/.config/shell/zsh/main" ] && . "$HOME/.config/shell/zsh/main"
+eval "$(starship init zsh)"

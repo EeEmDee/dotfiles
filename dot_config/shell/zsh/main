@@ -1,0 +1,7 @@
+SHELL_COMMON="$XDG_CONFIG_HOME/shell/common"
+SHELL_ZSH="$XDG_CONFIG_HOME/shell/zsh"
+
+source "$SHELL_ZSH/options"
+source "$SHELL_ZSH/completions"
+source "$SHELL_COMMON/aliases"
+source "$SHELL_COMMON/functions"
