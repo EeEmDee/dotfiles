@@ -1,2 +1,3 @@
+[ -f "$HOME/.config/shell/shellenv" ] && . "$HOME/.config/shell/shellenv"
 [ -f "$HOME/.config/shell/bash/main" ] && . "$HOME/.config/shell/bash/main"
 eval "$(starship init bash)"

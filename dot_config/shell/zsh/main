@@ -5,3 +5,13 @@ source "$SHELL_ZSH/options"
 source "$SHELL_ZSH/completions"
 source "$SHELL_COMMON/aliases"
 source "$SHELL_COMMON/functions"
+
+# Common drop-in extensions
+for f in "$SHELL_COMMON/extra/"*; do
+    [ -f "$f" ] && . "$f"
+done
+
+# Zsh-specific drop-in extensions
+for f in "$SHELL_ZSH/extra/"*; do
+    [ -f "$f" ] && . "$f"
+done

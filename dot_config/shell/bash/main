@@ -5,3 +5,12 @@ SHELL_BASH="$XDG_CONFIG_HOME/shell/bash"
 . "$SHELL_BASH/completions"
 . "$SHELL_COMMON/aliases"
 . "$SHELL_COMMON/functions"
+
+# Common drop-in extensions
+for f in "$SHELL_COMMON/extra/"*; do
+    [ -f "$f" ] && . "$f"
+done
+# Bash-specific drop-in extensions
+for f in "$SHELL_BASH/extra/"*; do
+    [ -f "$f" ] && . "$f"
+done
