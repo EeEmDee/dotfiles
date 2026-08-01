@@ -18,7 +18,7 @@ alias gc='git commit'
 alias gp='git push'
 alias gl='git log --oneline --graph'
 
-{{ if .wsl }}
+{{ if and (hasKey . "wsl") .wsl }}
 alias open='explorer.exe'
 alias pbcopy='clip.exe'
 alias pbpaste='powershell.exe -command "Get-Clipboard"'
